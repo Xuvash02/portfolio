@@ -1,0 +1,84 @@
+@import './portfolio.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light;
+}
+
+body {
+    @apply font-sans;
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
+
+/* 3D Visual Effects */
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transform-3d {
+    transform-style: preserve-3d;
+}
+
+.rotate-x-15 {
+    transform: rotateX(15deg);
+}
+
+.rotate-y-15 {
+    transform: rotateY(15deg);
+}
+
+.rotate-z-15 {
+    transform: rotateZ(15deg);
+}
+
+.translate-z-50 {
+    transform: translateZ(50px);
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.animate-spin-3d {
+    animation: spin-3d 4s linear infinite;
+}
+
+@keyframes spin-3d {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px) rotateX(5deg);
+}
+
+.card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.shadow-3d {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glow-3d {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.3);
+}
