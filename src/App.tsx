@@ -43,7 +43,7 @@ const PortfolioLanding = () => {
         const cursor = document.getElementById('cursor');
         const cursorRing = document.getElementById('cursor-ring');
         const scrollProgress = document.getElementById('scrollProgress');
-        
+
         const onMouseMove = (e: MouseEvent) => {
             if (cursor) cursor.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
             if (cursorRing) cursorRing.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
@@ -55,7 +55,7 @@ const PortfolioLanding = () => {
                 const total = document.documentElement.scrollHeight - window.innerHeight;
                 scrollProgress.style.width = `${(scrolled / total) * 100}%`;
             }
-            
+
             const reveals = document.querySelectorAll('.reveal');
             for (let i = 0; i < reveals.length; i++) {
                 const windowHeight = window.innerHeight;
@@ -64,7 +64,7 @@ const PortfolioLanding = () => {
                     reveals[i].classList.add('visible');
                 }
             }
-            
+
             const timelineItems = document.querySelectorAll('.timeline-item');
             for (let i = 0; i < timelineItems.length; i++) {
                 const windowHeight = window.innerHeight;
@@ -77,8 +77,8 @@ const PortfolioLanding = () => {
 
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('scroll', onScroll);
-        onScroll(); 
-        
+        onScroll();
+
         return () => {
             window.removeEventListener('mousemove', onMouseMove);
             window.removeEventListener('scroll', onScroll);
@@ -117,7 +117,7 @@ const PortfolioLanding = () => {
 
     return (
         <div className="portfolio-container" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
-            
+
             <div className="scroll-progress" id="scrollProgress"></div>
 
             <nav id="navbar">
@@ -153,7 +153,7 @@ const PortfolioLanding = () => {
                     <div className="hero-actions">
                         <a href="#contact" className="btn-primary">
                             Let's Work Together
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                         </a>
                         <a href="#about" className="btn-secondary">View My Work</a>
                     </div>
@@ -177,7 +177,7 @@ const PortfolioLanding = () => {
                     <div className="hero-img-wrapper">
                         <div className="hero-img-bg"></div>
                         <div className="hero-img-frame">
-                            <img src="./image.jpeg" alt="Subhash Pokharel" />
+                            <img src="/image.jpeg" alt="Subhash Pokharel" />
                             <div className="img-overlay"></div>
                         </div>
                         <div className="floating-card card-left">
@@ -302,14 +302,14 @@ const PortfolioLanding = () => {
                     </div>
                 </div>
             </section>
-            
+
             <section className="section" id="projects">
                 <div className="section-label">My Work</div>
                 <h2 className="section-title">Featured <span className="accent">Projects</span></h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 z-20 relative px-10">
                     {projects.map((project) => (
                         <Link
-                            key={project.id} 
+                            key={project.id}
                             to={project.link}
                             className="block group bg-slate-800/40 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition-all duration-300 transform hover:-translate-y-2 z-20"
                             style={{ position: 'relative' }}
@@ -325,7 +325,7 @@ const PortfolioLanding = () => {
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2">
-                                    {project.tags.slice(0,3).map(tag => (
+                                    {project.tags.slice(0, 3).map(tag => (
                                         <span key={tag} className="px-2 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-md">
                                             {tag}
                                         </span>
@@ -404,7 +404,7 @@ const PortfolioLanding = () => {
             <footer>
                 <div className="footer-name">Subhash Pokharel</div>
                 <div className="footer-copy">© 2025 </div>
-                
+
             </footer>
         </div>
     );
