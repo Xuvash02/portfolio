@@ -33,7 +33,6 @@ import {
     ArrowRight
 } from "lucide-react";
 import { useState, useEffect } from "react";
-import heroImage from "./assets/image.jpeg";
 
 // ============================================
 // PORTFOLIO LANDING PAGE
@@ -178,7 +177,7 @@ const PortfolioLanding = () => {
                     <div className="hero-img-wrapper">
                         <div className="hero-img-bg"></div>
                         <div className="hero-img-frame">
-                            <img src={heroImage} alt="Subhash Pokharel" />
+                            <img src="./image.jpeg" alt="Subhash Pokharel" />
                             <div className="img-overlay"></div>
                         </div>
                         <div className="floating-card card-left">
