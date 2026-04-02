@@ -115,300 +115,302 @@ const PortfolioLanding = () => {
         }
     ];
 
-    return (
-        <div className="portfolio-container" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
-            
-            <div className="scroll-progress" id="scrollProgress"></div>
+    const profileImg = "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=800&q=8";
 
-            <nav id="navbar">
-                <ul className="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact" className="nav-cta">Contact Me</a></li>
-                </ul>
-            </nav>
-
-            <section className="hero" id="home">
-                <div className="hero-bg-glow"></div>
-                <div className="hero-bg-glow2"></div>
-
-                <div className="hero-content">
-                    <div className="hero-tag">
-                        <span className="dot"></span>
-                        Available for opportunities
-                    </div>
-                    <h1 className="hero-name">
-                        Subhash<br />
-                        <span className="line2">Pokharel</span>
-                    </h1>
-                    <p className="hero-desc">
-                        Frontend Developer passionate about crafting pixel-perfect,
-                        high-performance web experiences. Bridging design and technology
-                        with clean code and creative problem-solving.
-                    </p>
-                    <div className="hero-actions">
-                        <a href="#contact" className="btn-primary">
-                            Let's Work Together
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
-                        <a href="#about" className="btn-secondary">View My Work</a>
-                    </div>
-                    <div className="hero-stats">
-                        <div>
-                            <div className="stat-num">1+</div>
-                            <div className="stat-label">Years Experience</div>
-                        </div>
-                        <div>
-                            <div className="stat-num">2+</div>
-                            <div className="stat-label">Companies</div>
-                        </div>
-                        <div>
-                            <div className="stat-num">7+</div>
-                            <div className="stat-label">Core Skills</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="hero-visual">
-                    <div className="hero-img-wrapper">
-                        <div className="hero-img-bg"></div>
-                        <div className="hero-img-frame">
-                            <img src="../image.jpeg" alt="Subhash Pokharel" />
-                            <div className="img-overlay"></div>
-                        </div>
-                        <div className="floating-card card-left">
-                            <div className="card-icon icon-purple">⚡</div>
-                            <div className="card-text">
-                                <strong>Frontend Dev</strong>
-                                <span>Web Specialist</span>
-                            </div>
-                        </div>
-                        <div className="floating-card card-right">
-                            <div className="card-icon icon-cyan">🌐</div>
-                            <div className="card-text">
-                                <strong>Sky Broadband</strong>
-                                <span>Tech Support 2024</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section" id="about">
-                <div className="section-label">Who I Am</div>
-                <h2 className="section-title">Passionate about <span className="accent">great</span> interfaces</h2>
-                <div className="about-grid">
-                    <div className="about-text reveal">
-                        <p>I am a dedicated and ambitious developer with a keen interest in web development and technology. Currently pursuing a Bachelor's in Computer Science & IT, I bring both academic knowledge and real-world experience to everything I build.</p>
-                        <p>From handling customer communications at e-commerce companies to diagnosing complex network issues at Sky Broadband, I've developed a unique perspective that blends technical depth with strong communication skills.</p>
-                        <p>I'm eager to take on meaningful projects, contribute to collaborative teams, and keep pushing the boundaries of what's possible on the web.</p>
-                        <div className="about-tags">
-                            <span className="tag">Problem Solver</span>
-                            <span className="tag">Fast Learner</span>
-                            <span className="tag">Team Player</span>
-                            <span className="tag">Creative Thinker</span>
-                            <span className="tag">Detail Oriented</span>
-                        </div>
-                    </div>
-                    <div className="reveal">
-                        <div className="detail-row"><span className="detail-label">Location</span><span className="detail-value">Nepal 🇳🇵</span></div>
-                        <div className="detail-row"><span className="detail-label">Email</span><span className="detail-value">closeuu13@gmail.com</span></div>
-                        <div className="detail-row"><span className="detail-label">Phone</span><span className="detail-value">+977 9818915941</span></div>
-                        <div className="detail-row"><span className="detail-label">LinkedIn</span><span className="detail-value">Xuvash02</span></div>
-                        <div className="detail-row"><span className="detail-label">Status</span><span className="detail-value" style={{ color: '#4caf50' }}>● Open to Work</span></div>
-                        <div className="detail-row"><span className="detail-label">Degree</span><span className="detail-value">Bsc. CSIT (Present)</span></div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section" id="skills">
-                <div className="section-label">What I Do</div>
-                <h2 className="section-title">Skills &amp; <span className="accent">Expertise</span></h2>
-                <div className="skills-grid">
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🎨</div>
-                        <div className="skill-name">Frontend Development</div>
-                        <div className="skill-desc">Building responsive, modern web interfaces with HTML, CSS, and JavaScript.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.85 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">📊</div>
-                        <div className="skill-name">Data Analysis</div>
-                        <div className="skill-desc">Interpreting complex datasets to drive strategic decisions and insights.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.78 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🔍</div>
-                        <div className="skill-name">Market Research</div>
-                        <div className="skill-desc">Identifying trends, customer needs, and competitive opportunities.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.80 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🗂️</div>
-                        <div className="skill-name">Project Management</div>
-                        <div className="skill-desc">Coordinating teams, timelines, and deliverables efficiently and effectively.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.82 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🖥️</div>
-                        <div className="skill-name">Nagios TV Monitoring</div>
-                        <div className="skill-desc">Infrastructure monitoring, alerting, and performance dashboards.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.70 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🌐</div>
-                        <div className="skill-name">Networking Basics</div>
-                        <div className="skill-desc">Diagnosing connectivity issues, configuring routers, TCP/IP fundamentals.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.75 } as React.CSSProperties}></div></div>
-                    </div>
-                    <div className="skill-card reveal">
-                        <div className="skill-icon">🧠</div>
-                        <div className="skill-name">Strategic Thinking</div>
-                        <div className="skill-desc">Long-term planning, resource optimization, and goal-oriented execution.</div>
-                        <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.88 } as React.CSSProperties}></div></div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section" id="experience">
-                <div className="section-label">My Journey</div>
-                <h2 className="section-title">Work <span className="accent">Experience</span></h2>
-                <div className="timeline">
-                    <div className="timeline-item">
-                        <div className="timeline-dot"></div>
-                        <div className="timeline-period">2024 — Present</div>
-                        <div className="timeline-company">Sky Broadband</div>
-                        <div className="timeline-role">Technical Support Specialist</div>
-                        <ul className="timeline-points">
-                            <li>Provided clear and effective communication with clients to resolve technical concerns promptly</li>
-                            <li>Diagnosed network and broadband connectivity issues across a wide range of customer setups</li>
-                            <li>Resolved router configuration and performance problems, ensuring high customer satisfaction</li>
-                        </ul>
-                    </div>
-                    <div className="timeline-item">
-                        <div className="timeline-dot"></div>
-                        <div className="timeline-period">2019 — 2021</div>
-                        <div className="timeline-company">Kinumna.com</div>
-                        <div className="timeline-role">Marketing &amp; Customer Support</div>
-                        <ul className="timeline-points">
-                            <li>Managed customer inquiries across phone, email, and live chat channels professionally</li>
-                            <li>Handled orders, returns, and exchanges ensuring smooth post-purchase experiences</li>
-                            <li>Coordinated with warehouse and logistics teams to streamline operations and reduce delays</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section className="section" id="projects">
-                <div className="section-label">My Work</div>
-                <h2 className="section-title">Featured <span className="accent">Projects</span></h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 z-20 relative px-10">
-                    {projects.map((project) => (
-                        <Link
-                            key={project.id} 
-                            to={project.link}
-                            className="block group bg-slate-800/40 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition-all duration-300 transform hover:-translate-y-2 z-20"
-                            style={{ position: 'relative' }}
-                        >
-                            <div className="p-6">
-                                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br flex items-center justify-center mb-6 text-white ${project.color}`}>
-                                    <project.icon className="w-6 h-6" />
-                                </div>
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-                                    {project.title}
-                                </h3>
-                                <p className="text-slate-400 text-sm mb-6 line-clamp-2">
-                                    {project.description}
-                                </p>
-                                <div className="flex flex-wrap gap-2">
-                                    {project.tags.slice(0,3).map(tag => (
-                                        <span key={tag} className="px-2 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-md">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
-            </section>
-
-            <section className="section" id="education">
-                <div className="section-label">Academic Background</div>
-                <h2 className="section-title">My <span className="accent">Education</span></h2>
-                <div className="edu-grid">
-                    <div className="edu-card reveal">
-                        <div className="edu-year">2017 — Present</div>
-                        <div className="edu-school">College of Applied Business</div>
-                        <div className="edu-degree">Bachelor of Science in Computer Science &amp; Information Technology (Bsc. CSIT)</div>
-                    </div>
-                    <div className="edu-card reveal">
-                        <div className="edu-year">2015 — 2017</div>
-                        <div className="edu-school">Morgan International College</div>
-                        <div className="edu-degree">Higher Secondary Education — Science &amp; Technology track with foundational CS coursework</div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section" id="contact">
-                <div className="section-label">Get In Touch</div>
-                <h2 className="section-title">Let's <span className="accent">Connect</span></h2>
-                <div className="contact-wrapper">
-                    <div>
-                        <a href="mailto:subhash@example.com" className="contact-info-card reveal">
-                            <div className="contact-icon">✉️</div>
-                            <div>
-                                <div className="contact-label">Email</div>
-                                <div className="contact-value">closeuu13@gmail.com</div>
-                            </div>
-                        </a>
-                        <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
-                            <div className="contact-icon">📞</div>
-                            <div>
-                                <div className="contact-label">Phone</div>
-                                <div className="contact-value">+977 9818915941</div>
-                            </div>
-                        </div>
-                        <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
-                            <div className="contact-icon">💼</div>
-                            <div>
-                                <div className="contact-label">LinkedIn</div>
-                                <div className="contact-value">Xuvash02</div>
-                            </div>
-                        </div>
-                        <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
-                            <div className="contact-icon">📍</div>
-                            <div>
-                                <div className="contact-label">Location</div>
-                                <div className="contact-value">Nepal</div>
-                            </div>
-                        </div>
-                    </div>
-                    <form className="contact-form reveal" onSubmit={(e) => e.preventDefault()}>
-                        <div className="form-group"><input type="text" placeholder="Your Name" /></div>
-                        <div className="form-group"><input type="email" placeholder="Your Email" /></div>
-                        <div className="form-group"><input type="text" placeholder="Subject" /></div>
-                        <div className="form-group"><textarea placeholder="Your message..."></textarea></div>
-                        <button type="submit" className="form-submit">
-                            Send Message
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" /></svg>
-                        </button>
-                    </form>
-                </div>
-            </section>
-
-            <footer>
-                <div className="footer-name">Subhash Pokharel</div>
-                <div className="footer-copy">© 2025 </div>
+        return (
+            <div className="portfolio-container" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
                 
-            </footer>
-        </div>
-    );
-};
+                <div className="scroll-progress" id="scrollProgress"></div>
+
+                <nav id="navbar">
+                    <ul className="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Work</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact" className="nav-cta">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+                <section className="hero" id="home">
+                    <div className="hero-bg-glow"></div>
+                    <div className="hero-bg-glow2"></div>
+
+                    <div className="hero-content">
+                        <div className="hero-tag">
+                            <span className="dot"></span>
+                            Available for opportunities
+                        </div>
+                        <h1 className="hero-name">
+                            Subhash<br />
+                            <span className="line2">Pokharel</span>
+                        </h1>
+                        <p className="hero-desc">
+                            Frontend Developer passionate about crafting pixel-perfect,
+                            high-performance web experiences. Bridging design and technology
+                            with clean code and creative problem-solving.
+                        </p>
+                        <div className="hero-actions">
+                            <a href="#contact" className="btn-primary">
+                                Let's Work Together
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="#about" className="btn-secondary">View My Work</a>
+                        </div>
+                        <div className="hero-stats">
+                            <div>
+                                <div className="stat-num">1+</div>
+                                <div className="stat-label">Years Experience</div>
+                            </div>
+                            <div>
+                                <div className="stat-num">2+</div>
+                                <div className="stat-label">Companies</div>
+                            </div>
+                            <div>
+                                <div className="stat-num">7+</div>
+                                <div className="stat-label">Core Skills</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="hero-visual">
+                        <div className="hero-img-wrapper">
+                            <div className="hero-img-bg"></div>
+                            <div className="hero-img-frame">
+                                        <img src="/image.jpeg" alt="Subhash Pokharel" />
+                                <div className="img-overlay"></div>
+                            </div>
+                            <div className="floating-card card-left">
+                                <div className="card-icon icon-purple">⚡</div>
+                                <div className="card-text">
+                                    <strong>Frontend Dev</strong>
+                                    <span>Web Specialist</span>
+                                </div>
+                            </div>
+                            <div className="floating-card card-right">
+                                <div className="card-icon icon-cyan">🌐</div>
+                                <div className="card-text">
+                                    <strong>Sky Broadband</strong>
+                                    <span>Tech Support 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section" id="about">
+                    <div className="section-label">Who I Am</div>
+                    <h2 className="section-title">Passionate about <span className="accent">great</span> interfaces</h2>
+                    <div className="about-grid">
+                        <div className="about-text reveal">
+                            <p>I am a dedicated and ambitious developer with a keen interest in web development and technology. Currently pursuing a Bachelor's in Computer Science & IT, I bring both academic knowledge and real-world experience to everything I build.</p>
+                            <p>From handling customer communications at e-commerce companies to diagnosing complex network issues at Sky Broadband, I've developed a unique perspective that blends technical depth with strong communication skills.</p>
+                            <p>I'm eager to take on meaningful projects, contribute to collaborative teams, and keep pushing the boundaries of what's possible on the web.</p>
+                            <div className="about-tags">
+                                <span className="tag">Problem Solver</span>
+                                <span className="tag">Fast Learner</span>
+                                <span className="tag">Team Player</span>
+                                <span className="tag">Creative Thinker</span>
+                                <span className="tag">Detail Oriented</span>
+                            </div>
+                        </div>
+                        <div className="reveal">
+                            <div className="detail-row"><span className="detail-label">Location</span><span className="detail-value">Nepal 🇳🇵</span></div>
+                            <div className="detail-row"><span className="detail-label">Email</span><span className="detail-value">closeuu13@gmail.com</span></div>
+                            <div className="detail-row"><span className="detail-label">Phone</span><span className="detail-value">+977 9818915941</span></div>
+                            <div className="detail-row"><span className="detail-label">LinkedIn</span><span className="detail-value">Xuvash02</span></div>
+                            <div className="detail-row"><span className="detail-label">Status</span><span className="detail-value" style={{ color: '#4caf50' }}>● Open to Work</span></div>
+                            <div className="detail-row"><span className="detail-label">Degree</span><span className="detail-value">Bsc. CSIT (Present)</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section" id="skills">
+                    <div className="section-label">What I Do</div>
+                    <h2 className="section-title">Skills &amp; <span className="accent">Expertise</span></h2>
+                    <div className="skills-grid">
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🎨</div>
+                            <div className="skill-name">Frontend Development</div>
+                            <div className="skill-desc">Building responsive, modern web interfaces with HTML, CSS, and JavaScript.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.85 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">📊</div>
+                            <div className="skill-name">Data Analysis</div>
+                            <div className="skill-desc">Interpreting complex datasets to drive strategic decisions and insights.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.78 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🔍</div>
+                            <div className="skill-name">Market Research</div>
+                            <div className="skill-desc">Identifying trends, customer needs, and competitive opportunities.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.80 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🗂️</div>
+                            <div className="skill-name">Project Management</div>
+                            <div className="skill-desc">Coordinating teams, timelines, and deliverables efficiently and effectively.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.82 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🖥️</div>
+                            <div className="skill-name">Nagios TV Monitoring</div>
+                            <div className="skill-desc">Infrastructure monitoring, alerting, and performance dashboards.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.70 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🌐</div>
+                            <div className="skill-name">Networking Basics</div>
+                            <div className="skill-desc">Diagnosing connectivity issues, configuring routers, TCP/IP fundamentals.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.75 } as React.CSSProperties}></div></div>
+                        </div>
+                        <div className="skill-card reveal">
+                            <div className="skill-icon">🧠</div>
+                            <div className="skill-name">Strategic Thinking</div>
+                            <div className="skill-desc">Long-term planning, resource optimization, and goal-oriented execution.</div>
+                            <div className="skill-bar-wrap"><div className="skill-bar" style={{ '--w': 0.88 } as React.CSSProperties}></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section" id="experience">
+                    <div className="section-label">My Journey</div>
+                    <h2 className="section-title">Work <span className="accent">Experience</span></h2>
+                    <div className="timeline">
+                        <div className="timeline-item">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-period">2024 — Present</div>
+                            <div className="timeline-company">Sky Broadband</div>
+                            <div className="timeline-role">Technical Support Specialist</div>
+                            <ul className="timeline-points">
+                                <li>Provided clear and effective communication with clients to resolve technical concerns promptly</li>
+                                <li>Diagnosed network and broadband connectivity issues across a wide range of customer setups</li>
+                                <li>Resolved router configuration and performance problems, ensuring high customer satisfaction</li>
+                            </ul>
+                        </div>
+                        <div className="timeline-item">
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-period">2019 — 2021</div>
+                            <div className="timeline-company">Kinumna.com</div>
+                            <div className="timeline-role">Marketing &amp; Customer Support</div>
+                            <ul className="timeline-points">
+                                <li>Managed customer inquiries across phone, email, and live chat channels professionally</li>
+                                <li>Handled orders, returns, and exchanges ensuring smooth post-purchase experiences</li>
+                                <li>Coordinated with warehouse and logistics teams to streamline operations and reduce delays</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section className="section" id="projects">
+                    <div className="section-label">My Work</div>
+                    <h2 className="section-title">Featured <span className="accent">Projects</span></h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 z-20 relative px-10">
+                        {projects.map((project) => (
+                            <Link
+                                key={project.id} 
+                                to={project.link}
+                                className="block group bg-slate-800/40 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition-all duration-300 transform hover:-translate-y-2 z-20"
+                                style={{ position: 'relative' }}
+                            >
+                                <div className="p-6">
+                                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br flex items-center justify-center mb-6 text-white ${project.color}`}>
+                                        <project.icon className="w-6 h-6" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                                        {project.title}
+                                    </h3>
+                                    <p className="text-slate-400 text-sm mb-6 line-clamp-2">
+                                        {project.description}
+                                    </p>
+                                    <div className="flex flex-wrap gap-2">
+                                        {project.tags.slice(0,3).map(tag => (
+                                            <span key={tag} className="px-2 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-md">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+
+                <section className="section" id="education">
+                    <div className="section-label">Academic Background</div>
+                    <h2 className="section-title">My <span className="accent">Education</span></h2>
+                    <div className="edu-grid">
+                        <div className="edu-card reveal">
+                            <div className="edu-year">2017 — Present</div>
+                            <div className="edu-school">College of Applied Business</div>
+                            <div className="edu-degree">Bachelor of Science in Computer Science &amp; Information Technology (Bsc. CSIT)</div>
+                        </div>
+                        <div className="edu-card reveal">
+                            <div className="edu-year">2015 — 2017</div>
+                            <div className="edu-school">Morgan International College</div>
+                            <div className="edu-degree">Higher Secondary Education — Science &amp; Technology track with foundational CS coursework</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="section" id="contact">
+                    <div className="section-label">Get In Touch</div>
+                    <h2 className="section-title">Let's <span className="accent">Connect</span></h2>
+                    <div className="contact-wrapper">
+                        <div>
+                            <a href="mailto:subhash@example.com" className="contact-info-card reveal">
+                                <div className="contact-icon">✉️</div>
+                                <div>
+                                    <div className="contact-label">Email</div>
+                                    <div className="contact-value">closeuu13@gmail.com</div>
+                                </div>
+                            </a>
+                            <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
+                                <div className="contact-icon">📞</div>
+                                <div>
+                                    <div className="contact-label">Phone</div>
+                                    <div className="contact-value">+977 9818915941</div>
+                                </div>
+                            </div>
+                            <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
+                                <div className="contact-icon">💼</div>
+                                <div>
+                                    <div className="contact-label">LinkedIn</div>
+                                    <div className="contact-value">Xuvash02</div>
+                                </div>
+                            </div>
+                            <div className="contact-info-card reveal" style={{ cursor: 'default' }}>
+                                <div className="contact-icon">📍</div>
+                                <div>
+                                    <div className="contact-label">Location</div>
+                                    <div className="contact-value">Nepal</div>
+                                </div>
+                            </div>
+                        </div>
+                        <form className="contact-form reveal" onSubmit={(e) => e.preventDefault()}>
+                            <div className="form-group"><input type="text" placeholder="Your Name" /></div>
+                            <div className="form-group"><input type="email" placeholder="Your Email" /></div>
+                            <div className="form-group"><input type="text" placeholder="Subject" /></div>
+                            <div className="form-group"><textarea placeholder="Your message..."></textarea></div>
+                            <button type="submit" className="form-submit">
+                                Send Message
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" /></svg>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+
+                <footer>
+                    <div className="footer-name">Subhash Pokharel</div>
+                    <div className="footer-copy">© 2025 </div>
+                    
+                </footer>
+            </div>
+        );
+    };
 
 
 // ============================================
