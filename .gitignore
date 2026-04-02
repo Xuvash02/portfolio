@@ -1,5 +1,5 @@
 # Dependencies
-# node_modules/
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -72,3 +72,4 @@ jspm_packages/
 
 # DynamoDB Local files
 .dynamodb/
+node_modules
