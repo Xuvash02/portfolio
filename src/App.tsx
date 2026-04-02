@@ -115,7 +115,7 @@ const PortfolioLanding = () => {
         }
     ];
 
-    const profileImg = "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=800&q=8";
+    const profileImg = "/image.jpeg";
 
         return (
             <div className="portfolio-container" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
